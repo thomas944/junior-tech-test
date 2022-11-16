@@ -1,0 +1,19 @@
+<html>
+  <head>
+      <title>res.render() Demo</title>
+  </head>
+  <body>
+    <h2><%= name %> </h2>
+    <div>
+      <ul>
+        <% images.forEach(function(image) { %>
+          <li><img src="<%= image %>" style="width:150px"></li>
+          <a href="<%= image %>"> <%= image %> </a>
+        <% }) %>
+
+      </ul>      
+    </div>
+   
+  </body>
+</html>
+
